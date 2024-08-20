@@ -1,2 +1,2 @@
 # TryFileNameLimit
- Try to restrict check-in of files with name length greater than max using Powershell
+ Try to restrict check-in of files with name length greater than max using Powershell. The script is included in the file 1.ps1, which is a copy of the file LimitFileNameLengthTo5.ps1 I included in the .git/hooks folder. I included the command pwsh .git/hooks/LimitFileNameLengthTo5.ps1 in the pre-commit file in the hooks folder. After a few unsuccessful tests, the script works fine and commits for file names including extensions are not allowed if greater than 5.
